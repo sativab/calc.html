@@ -32,6 +32,13 @@ let b = document.getElementById("sn").value;
 let c = Number(a) / Number(b);
 document.getElementById("ans").innerHTML = c;
 }
+
+function exp() {
+let a = document.getElementById("fn").value;
+let b = document.getElementById("sn").value;
+let c = Number(a) ** Number(b);
+document.getElementById("ans").innerHTML = c;
+}
 </script>
 
 </head>
@@ -44,7 +51,7 @@ Second number? <input id="sn"> <br>
 <button onclick="sub()"> - </button>
 <button onclick="mul()"> * </button>
 <button onclick="div()"> / </button>
-    
+<button onclick="div()"> ^ </button>
 </p>
 <p>
     Your Answer is:  <span id="ans"> __________ </span></p>
